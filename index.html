@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verkehrsverein Südlicher Sackwald e.V. – Startseite</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+  
+  <!-- Globale CSS-Datei -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Image Slider CSS -->
+  <link rel="stylesheet" href="components/imageSlider/imageSlider.css">
+</head>
+<body>
+  <!-- Platzhalter für die Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Image Slider -->
+  <div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://loremflickr.com/320/240" alt="Slide 1">
+      <img src="" />
+
+      <div class="text">Caption Text</div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="assets/img/placeholder.png" alt="Slide 2">
+      <div class="text">Caption Two</div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="assets/img/placeholder.png" alt="Slide 3">
+      <div class="text">Caption Three</div>
+    </div>
+    <!-- Navigation -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- Dots/Circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+    <!-- Hauptinhalt -->
+    <main>
+      <main>
+        <section class="container">
+          <h4 style="color: #198754; font-size: 35px;">Herzlich willkommen im Südlichen Sackwald</h4>
+          <h2 >Ihr Urlaubsparadies im Herzen von Niedersachsen
+          </h2>
+          <p style="font-size: 20px;">Der Südliche Sackwald ist eine idyllische Region in Niedersachsen, die durch ihre unberührte Natur, malerische Landschaften und charmanten Dörfer besticht. Ob Wandern, Radfahren oder einfach nur Entspannen – hier finden Sie alles, was das Herz begehrt.
+    
+          </p>
+        </section>
+      </main>
+
+
+      <!-- Abschnitt: Sehenswürdigkeiten -->
+      <section id="entdecken" class="container">
+        <h2>Sehenswürdigkeiten</h2>
+        <div class="image-grid">
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Winzenburg">
+            <p>Winzenburg – Eine der ältesten Burganlagen Norddeutschlands.</p>
+          </div>
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Kloster Wöltingerode">
+            <p>Kloster Wöltingerode – Historisches Zisterzienserkloster.</p>
+          </div>
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Leinebergland">
+            <p>Leinebergland – Paradies für Wanderer und Radfahrer.</p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Abschnitt: Gastro-Angebote -->
+      <section class="container">
+        <h2>Gastro-Angebote</h2>
+        <div class="image-grid">
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Landgasthof Winzenburg">
+            <p>Landgasthof Winzenburg – Traditionelle deutsche Küche.</p>
+          </div>
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Café am Kloster">
+            <p>Café am Kloster – Hausgemachter Kuchen und Kaffee.</p>
+          </div>
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Waldrestaurant Leineblick">
+            <p>Waldrestaurant Leineblick – Regionale Spezialitäten.</p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Abschnitt: Aktive Erlebnisse -->
+      <section class="container">
+        <h2>Aktive Erlebnisse</h2>
+        <div class="image-grid">
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Wandern">
+            <p>Wandern – Gut ausgebaute Wege durch Wälder und Wiesen.</p>
+          </div>
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Radfahren">
+            <p>Radfahren – Entdecken Sie die Region auf zwei Rädern.</p>
+          </div>
+          <div class="image-item">
+            <img src="https://image-generator.de/320x240/eeeeee/dddddd/000000.png" alt="Angeln">
+            <p>Angeln – In den klaren Gewässern der Leine und Innerste.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <!-- Platzhalter für den Footer -->
+    <div id="footer"></div>
+  
+    <!-- Eigene Scripts -->
+    <script src="script.js"></script>
+    <script src="components/footer/footer.js"></script>
+    <script src="components/nav/nav.js"></script>
+    <script src="components/imageSlider/imageSlider.js"></script>
+  </body>
+</html>
