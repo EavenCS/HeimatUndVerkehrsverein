@@ -1,33 +1,28 @@
-/* Globale Einstellungen */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  /* Slideshow-Container im Vollbild */
   .slideshow-container {
-    width: 100vw;      /* 100% der Viewport-Breite */
-    height: 100vh;     /* 100% der Viewport-Höhe */
+    width: 100vw;
+    height: 30vh;
     position: relative;
-    overflow: hidden;  /* Verhindert unerwünschte Scrollbars */
+    overflow: hidden;
   }
   
-  /* Standardmäßig ausgeblendete Slides */
   .mySlides {
     display: none;
     width: 100%;
     height: 100%;
   }
   
-  /* Bilder innerhalb der Slides */
   .mySlides img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Das Bild füllt den Container, ohne das Seitenverhältnis zu verzerren¹ */
+    object-fit: cover; 
   }
   
-  /* Navigation: Vor- und Zurück-Buttons */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -43,18 +38,15 @@
     user-select: none;
   }
   
-  /* Der "Next"-Button rechts positionieren */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* Hover-Effekt für Buttons */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* Caption-Text */
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -65,7 +57,6 @@
     text-align: center;
   }
   
-  /* Nummerierungstext (z. B. "1 / 3") */
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -74,7 +65,6 @@
     top: 0;
   }
   
-  /* Dots (Indikatoren) */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -90,7 +80,6 @@
     background-color: #717171;
   }
   
-  /* Fading Animation */
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
