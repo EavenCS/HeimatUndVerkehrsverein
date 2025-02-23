@@ -1,11 +1,11 @@
 $(document).ready(function(){
     // Navbar und Footer laden (wie gehabt)
-    $("#navbar").load("components/nav/nav.html", function(response, status, xhr) {
+    $("#navbar").load("../components/nav/nav.html", function(response, status, xhr) {
       if(status === "error") {
         console.error("Fehler beim Laden der Navbar: " + xhr.status + " " + xhr.statusText);
       }
     });
-    $("#footer").load("components/footer/footer.html");
+    $("#footer").load("../components/footer/footer.html");
   
     // Image Slider im Hero-Bereich
     var $slides = $('.slider img');
