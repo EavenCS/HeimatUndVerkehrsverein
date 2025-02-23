@@ -1,23 +1,30 @@
-<!-- Beispielhafte Navbar -->
 <header>
-    <div class="navbar">
-      <div class="navbar-top">
-        <div class="logo">
-          <a href="index.html">Verkehrsverein südlicher Sackwald e.V.</a>
-        </div>
+  <link rel="stylesheet" href="nav.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/components/nav/nav.js"></script>
+  <div class="navbar">
+    <div class="navbar-top">
+      <div class="logo">
+        <a href="index.html">Verkehrsverein südlicher Sackwald e.V.</a>
       </div>
-      <div class="navbar-bottom">
-        <nav>
-          <ul class="nav-group">
-            <li class="nav-item"><a href="index.html" class="active">Startseite</a></li>
-            <li class="nav-item"><a href="der-verein.html">Der Verein</a></li>
-            <li class="nav-item"><a href="bildergalerie.html">Bildergalerie</a></li>
-            <li class="nav-item"><a href="sehenswuerdigkeiten.html">Sehenswürdigkeiten</a></li>
-            <li class="nav-item"><a href="gastronomie.html">Gastronomie</a></li>
-            <li class="nav-item"><a href="aktiv-in-der-region.html">Aktiv in der Region</a></li>
-          </ul>
-        </nav>
+      <!-- Hamburger-Button for the mobile view -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-  </header>
-  
+    <div class="navbar-bottom">
+      <nav id="nav">
+        <ul class="nav-group">
+          <li class="nav-item"><a href="index.html" class="active">Startseite</a></li>
+          <li class="nav-item"><a href="der-verein.html">Der Verein</a></li>
+          <li class="nav-item"><a href="bildergalerie.html">Bildergalerie</a></li>
+          <li class="nav-item"><a href="sehenswuerdigkeiten.html">Sehenswürdigkeiten</a></li>
+          <li class="nav-item"><a href="gastronomie.html">Gastronomie</a></li>
+          <li class="nav-item"><a href="aktiv-in-der-region.html">Aktiv in der Region</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

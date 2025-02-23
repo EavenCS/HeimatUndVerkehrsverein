@@ -1,4 +1,6 @@
 $(document).ready(function(){
-    $("#navbar").load("components/nav/nav.html"); 
+  $('#hamburger').click(function(){
+    console.log("Hamburger wurde geklickt"); // Debug-Ausgabe
+    $('#nav').toggleClass('open');
   });
-  
+});
