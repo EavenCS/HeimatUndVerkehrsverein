@@ -1,0 +1,39 @@
+.container-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* vier Spalten flexibel */
+  padding: 10px;
+}
+
+.headline {
+  grid-column: 2 / span 2;
+  text-align: center;
+  background-color: #e9f5ff;
+  padding: 5px;
+}
+
+.content-left {
+  grid-column: 2;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.content-right {
+  grid-column: 3;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Responsive Anpassung: bei kleineren Bildschirmen */
+@media (max-width: 768px) {
+  .container-grid {
+    grid-template-columns: 1fr; /* nur noch 1 Spalte */
+  }
+
+  .headline,
+  .content-left,
+  .content-right {
+    grid-column: 1;
+    text-align: center;
+  }
+}
