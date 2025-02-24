@@ -207,3 +207,9 @@ header {
 .buerger-btn:hover {
     transform: scale(1.1);
 }
+
+.logo img{
+    height: 50px; 
+    vertical-align: middle; 
+    filter: brightness(0) invert(1);
+}
