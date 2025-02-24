@@ -1,0 +1,8 @@
+.container-one{
+    flex: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.container-two {
+    grid-template-columns: repeat(3, 1fr);
+}
