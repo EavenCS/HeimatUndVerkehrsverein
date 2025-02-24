@@ -24,10 +24,9 @@
   padding: 10px;
 }
 
-/* Responsive Anpassung: bei kleineren Bildschirmen */
 @media (max-width: 768px) {
   .container-grid {
-    grid-template-columns: 1fr; /* nur noch 1 Spalte */
+    grid-template-columns: 1fr; 
   }
 
   .headline,
