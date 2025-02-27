@@ -1,0 +1,46 @@
+.container-wiki {
+    height: 100vh; /* Gesamthöhe festgelegt, damit fr-Einheiten berechnet werden */
+    display: grid;
+    /* 4 Spalten: 5% | 60% | 30% | 5% */
+    grid-template-columns: 5% 60% 30% 5%;
+    /* 2 Zeilen: 0.4fr (Headline) und 2.4fr (Content & Sidebar) */
+    grid-template-rows: 0.4fr 2.4fr;
+    gap: 5px;
+    
+    /* Definition der Grid-Bereiche:
+       Zeile 1: .        headline  headline  .
+       Zeile 2: .        content   sidebar   .
+    */
+    grid-template-areas:
+      ". headline headline ."
+      ". content sidebar .";
+  }
+  
+  .headline-wiki {
+    grid-area: headline;
+    background-color: #dfffe6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: #cceeff;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #ffffcc;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .sidebar h2, .content h1 {
+    margin-top: 0;
+  }
+  
