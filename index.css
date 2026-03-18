@@ -4,23 +4,23 @@
 .hero-section {
   position: relative;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .slideshow-container {
   position: relative;
   max-width: 100%;
-  height: 500px;
+  height: 400px;
   margin: 0;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .mySlides {
   display: none;
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .mySlides img {
@@ -36,8 +36,8 @@
   right: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   color: #fff;
-  font-size: 24px;
-  padding: 30px 20px;
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
   font-weight: 600;
 }
@@ -83,7 +83,7 @@
 /* Dots */
 .dots-container {
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
   background-color: #f9f9f9;
 }
 
@@ -116,28 +116,28 @@
 /* Welcome Section */
 .welcome-section {
   background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .welcome-section h1 {
   color: #00796b;
-  font-size: 3em;
-  margin-bottom: 15px;
+  font-size: 2.2em;
+  margin-bottom: 8px;
   font-weight: 700;
 }
 
 .welcome-section h2 {
   color: #333;
-  font-size: 1.8em;
-  margin-bottom: 20px;
+  font-size: 1.4em;
+  margin-bottom: 12px;
   font-weight: 400;
 }
 
 .welcome-section p {
-  font-size: 1.2em;
-  line-height: 1.8;
+  font-size: 1em;
+  line-height: 1.6;
   max-width: 900px;
   margin: 0 auto;
   color: #555;
@@ -145,8 +145,8 @@
 
 /* Content Sections */
 .content-section {
-  padding: 50px 20px;
-  margin-bottom: 30px;
+  padding: 30px 20px;
+  margin-bottom: 0;
 }
 
 .content-section:nth-child(even) {
@@ -155,29 +155,29 @@
 
 .section-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .section-header h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   color: #00796b;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   border-bottom: 3px solid #00796b;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .section-header p {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #666;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* Verbesserte Image Grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -212,12 +212,12 @@
 }
 
 .image-item p {
-  padding: 20px;
-  font-size: 1.05em;
-  line-height: 1.6;
+  padding: 15px;
+  font-size: 0.95em;
+  line-height: 1.5;
   color: #333;
   margin: 0;
-  min-height: 80px;
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,21 +227,21 @@
 /* Call-to-Action Buttons */
 .cta-container {
   text-align: center;
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .cta-button {
   display: inline-block;
   background: #00796b;
   color: #fff;
-  padding: 15px 40px;
-  font-size: 1.1em;
-  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1em;
+  border-radius: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin: 8px;
 }
 
 .cta-button:hover {
@@ -265,35 +265,36 @@
 .info-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  gap: 20px;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .info-card {
   background: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .info-card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
 }
 
 .info-card h3 {
   color: #00796b;
-  font-size: 1.5em;
-  margin-bottom: 15px;
+  font-size: 1.3em;
+  margin-bottom: 10px;
 }
 
 .info-card p {
   color: #666;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.95em;
 }
 
 /* Responsive Design */
@@ -307,35 +308,43 @@
   }
 
   .mySlides .text {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .welcome-section {
     padding: 20px 15px;
   }
 
   .welcome-section h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .welcome-section h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .welcome-section p {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   .section-header h2 {
-    font-size: 2em;
+    font-size: 1.6em;
+  }
+
+  .content-section {
+    padding: 20px 15px;
   }
 
   .image-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
   }
 
   .cta-button {
     display: block;
-    margin: 10px auto;
-    max-width: 300px;
+    margin: 8px auto;
+    max-width: 280px;
   }
 }
 
@@ -349,10 +358,14 @@
   }
 
   .welcome-section {
-    padding: 40px 15px;
+    padding: 20px 10px;
   }
 
   .content-section {
-    padding: 30px 15px;
+    padding: 20px 10px;
+  }
+
+  .section-header h2 {
+    font-size: 1.4em;
   }
 }
