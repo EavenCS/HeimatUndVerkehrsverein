@@ -1,0 +1,358 @@
+/* Startseiten-spezifisches CSS */
+
+/* Hero-Sektion mit verbessertem Slider */
+.hero-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 500px;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySlides .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  font-size: 24px;
+  padding: 30px 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.numbertext {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* Slider Navigation */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 121, 107, 0.5);
+  text-decoration: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 121, 107, 0.9);
+}
+
+/* Dots */
+.dots-container {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f9f9f9;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #00796b;
+}
+
+/* Fade Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: 0.6}
+  to {opacity: 1}
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-section h1 {
+  color: #00796b;
+  font-size: 3em;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.welcome-section h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.welcome-section p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 50px 20px;
+  margin-bottom: 30px;
+}
+
+.content-section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2.5em;
+  color: #00796b;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #00796b;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1.1em;
+  color: #666;
+  margin-top: 15px;
+}
+
+/* Verbesserte Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.image-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.05);
+}
+
+.image-item p {
+  padding: 20px;
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Call-to-Action Buttons */
+.cta-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #00796b;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.cta-button:hover {
+  background: #004d40;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button.secondary {
+  background: #fff;
+  color: #00796b;
+  border: 2px solid #00796b;
+}
+
+.cta-button.secondary:hover {
+  background: #00796b;
+  color: #fff;
+}
+
+/* Info Cards */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.info-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  color: #00796b;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slideshow-container {
+    height: 300px;
+  }
+
+  .mySlides {
+    height: 300px;
+  }
+
+  .mySlides .text {
+    font-size: 18px;
+    padding: 20px 15px;
+  }
+
+  .welcome-section h1 {
+    font-size: 2em;
+  }
+
+  .welcome-section h2 {
+    font-size: 1.4em;
+  }
+
+  .welcome-section p {
+    font-size: 1em;
+  }
+
+  .section-header h2 {
+    font-size: 2em;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cta-button {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container {
+    height: 250px;
+  }
+
+  .mySlides {
+    height: 250px;
+  }
+
+  .welcome-section {
+    padding: 40px 15px;
+  }
+
+  .content-section {
+    padding: 30px 15px;
+  }
+}

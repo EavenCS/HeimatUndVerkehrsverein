@@ -1,70 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <!-- Basic Meta Information -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Verkehrsverein Südlicher Sackwald e.V. – Winzenburg</title>
-      
+
         <!-- Preconnect & Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        
+
         <!-- Global CSS Files -->
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="winzenburg.css">
+        <link rel="stylesheet" href="sehenswuerdigkeiten.css">
         <link rel="stylesheet" href="../components/imageSlider/imageSlider.css">
-        
+
         <!-- Navigation CSS -->
         <link rel="stylesheet" href="../components/nav/nav.css">
         <link rel="stylesheet" href="../components/footer/footer.css">
-        
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../components/nav/nav.js"></script>
       </head>
 <body>
     <div id="navbar"></div>
-    <div id="navbar"></div>
-    
-    <div class="container-wiki">
-        <!-- Überschrift: Besetzt Zeile 1, Spalten 2 & 3 -->
-        <div class="headline-wiki">Wiki-Artikel: Einführung in CSS Grid</div>
-        
-        <!-- Inhalt: Besetzt Zeile 2, Spalte 2 -->
-        <div class="content">
-          <h1>Einführung in CSS Grid</h1>
-          <p>
-            Willkommen zu unserem Wiki-Artikel über CSS Grid. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Praesent vehicula, magna non convallis consequat, odio urna tempus est, vitae placerat nunc velit eget risus.
-          </p>
-          <p>
-            Donec sit amet nulla in metus egestas varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-            posuere cubilia curae; Mauris consequat erat in libero fermentum, vitae vestibulum nisi porttitor.
-          </p>
-          <p>
-            Weitere Fülltexte können hier ergänzt werden, um den Inhalt umfangreicher zu gestalten. Sed ut perspiciatis unde 
-            omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-          </p>
-        </div>
-        
-        <!-- Steckbrief: Besetzt Zeile 2, Spalte 3 -->
-        <div class="sidebar">
-          <h2>Steckbrief</h2>
-          <p><strong>Name:</strong> Max Mustermann</p>
-          <p><strong>Geboren:</strong> 01.01.1990</p>
-          <p><strong>Beruf:</strong> Softwareentwickler</p>
-          <p><strong>Hobbies:</strong> Lesen, Programmieren, Reisen</p>
-          <p>
-            Hier können weitere Details stehen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
-          </p>
+
+    <!-- Hauptinhalt -->
+    <main>
+      <div class="wiki-container">
+        <div class="wiki-layout">
+          <!-- Linke Spalte: Hauptinhalt -->
+          <div class="wiki-content">
+            <h1>Winzenburg</h1>
+
+            <p>
+              Die <strong>Winzenburg</strong> ist eine der ältesten und bedeutendsten Burgruinen in Niedersachsen.
+              Sie thront majestätisch auf einem 320 Meter hohen Bergsporn über dem gleichnamigen Ort Winzenburg
+              im südlichen Sackwald und bietet einen atemberaubenden Blick über das Leinebergland.
+            </p>
+
+            <p>
+              Die Burg wurde bereits im frühen Mittelalter errichtet und diente jahrhundertelang als
+              Schutz- und Herrschaftssitz. Heute ist sie ein beliebtes Ausflugsziel für Wanderer,
+              Geschichtsinteressierte und Naturliebhaber.
+            </p>
+
+            <h2 id="geschichte">Geschichte</h2>
+            <p>
+              Die genaue Entstehungszeit der Winzenburg ist nicht eindeutig belegt, jedoch deuten
+              archäologische Funde darauf hin, dass bereits im 10. Jahrhundert eine Befestigungsanlage
+              an diesem strategisch wichtigen Ort existierte.
+            </p>
+
+            <h3>Frühe Erwähnungen</h3>
+            <p>
+              Die erste urkundliche Erwähnung der Burg stammt aus dem Jahr 1130. Zu dieser Zeit
+              gehörte sie den Grafen von Winzenburg, einem einflussreichen Adelsgeschlecht der Region.
+              Die Burg spielte eine wichtige Rolle in den territorialen Auseinandersetzungen des
+              Mittelalters.
+            </p>
+
+            <h3>Blütezeit und Niedergang</h3>
+            <p>
+              Im 12. und 13. Jahrhundert erlebte die Winzenburg ihre Blütezeit als Verwaltungs-
+              und Verteidigungszentrum. Nach mehreren Besitzerwechseln und kriegerischen
+              Auseinandersetzungen verlor die Burg im 15. Jahrhundert zunehmend an Bedeutung
+              und verfiel schließlich zur Ruine.
+            </p>
+
+            <div class="wiki-quote">
+              "Von der Winzenburg aus hatte man einen strategischen Überblick über das gesamte
+              Leinebergland. Wer diese Burg kontrollierte, kontrollierte die Handelswege."
+              <br>— Historiker Dr. Heinrich Meyer, 1987
+            </div>
+
+            <h2 id="architektur">Architektur</h2>
+            <p>
+              Die Burgruine zeigt noch heute beeindruckende Reste der mittelalterlichen Baukunst.
+              Besonders gut erhalten sind Teile der Ringmauer sowie der massive Bergfried,
+              der einst als Wachturm und letzter Zufluchtsort diente.
+            </p>
+
+            <h3>Bauweise</h3>
+            <p>
+              Die Burg wurde aus regionalem Sandstein errichtet, der aus nahegelegenen Steinbrüchen
+              stammte. Die Mauern erreichten stellenweise eine Dicke von über zwei Metern, was die
+              Wehrhaftigkeit der Anlage unterstreicht.
+            </p>
+
+            <ul>
+              <li><strong>Bergfried:</strong> ca. 20 Meter hoch, quadratischer Grundriss</li>
+              <li><strong>Ringmauer:</strong> ursprünglich über 300 Meter Länge</li>
+              <li><strong>Palas:</strong> Reste des Wohngebäudes noch erkennbar</li>
+              <li><strong>Kapelle:</strong> Fundamentreste im Innenhof</li>
+            </ul>
+
+            <h2 id="sehenswert">Sehenswertes</h2>
+            <p>
+              Ein Besuch der Winzenburg lohnt sich besonders wegen:
+            </p>
+            <ul>
+              <li>Der spektakulären Aussicht über das Leinebergland</li>
+              <li>Der gut erhaltenen Ruinenarchitektur</li>
+              <li>Der informativen Hinweistafeln zur Geschichte</li>
+              <li>Der umliegenden Wanderwege durch den südlichen Sackwald</li>
+            </ul>
+
+            <h2 id="besuch">Besucherinformationen</h2>
+            <p>
+              Die Burgruine ist ganzjährig frei zugänglich. Ein Besuch ist besonders im Frühling
+              und Herbst empfehlenswert, wenn die umliegenden Wälder in voller Pracht stehen.
+            </p>
+
+            <h3>Anfahrt</h3>
+            <p>
+              Die Winzenburg ist sowohl mit dem Auto als auch zu Fuß gut erreichbar.
+              Vom Ort Winzenburg führt ein ausgeschilderter Wanderweg (ca. 30 Minuten)
+              zur Burgruine. Parkplätze sind im Ort vorhanden.
+            </p>
+
+            <h2 id="galerie">Galerie</h2>
+            <div class="wiki-gallery">
+              <div class="wiki-gallery-item">
+                <img src="http://www.suedlicher-sackwald.eu/attachments/Image/winzenburg-CD.jpg" alt="Blick auf die Winzenburg">
+                <p>Gesamtansicht der Burgruine</p>
+              </div>
+              <div class="wiki-gallery-item">
+                <img src="https://th.bing.com/th/id/OIP.VPvDcqRw6G1RAxtU-JB7HgHaFj?w=245&h=184&c=7&r=0&o=5&pid=1.7" alt="Bergfried">
+                <p>Der erhaltene Bergfried</p>
+              </div>
+              <div class="wiki-gallery-item">
+                <img src="https://placehold.co/300x200/00796b/ffffff?text=Aussicht" alt="Aussicht vom Berg">
+                <p>Panoramablick vom Burgberg</p>
+              </div>
+              <div class="wiki-gallery-item">
+                <img src="https://placehold.co/300x200/00796b/ffffff?text=Mauerrest" alt="Mauerreste">
+                <p>Reste der Ringmauer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rechte Spalte: Infobox -->
+          <aside class="wiki-infobox">
+            <h3>Winzenburg</h3>
+            <img src="http://www.suedlicher-sackwald.eu/attachments/Image/winzenburg-CD.jpg" alt="Winzenburg">
+
+            <table>
+              <tr>
+                <th>Ort</th>
+                <td>Winzenburg, Niedersachsen</td>
+              </tr>
+              <tr>
+                <th>Höhe</th>
+                <td>320 m ü. NN</td>
+              </tr>
+              <tr>
+                <th>Typ</th>
+                <td>Höhenburg (Ruine)</td>
+              </tr>
+              <tr>
+                <th>Erbaut</th>
+                <td>ca. 10. Jahrhundert</td>
+              </tr>
+              <tr>
+                <th>Erste Erwähnung</th>
+                <td>1130</td>
+              </tr>
+              <tr>
+                <th>Zustand</th>
+                <td>Ruine</td>
+              </tr>
+              <tr>
+                <th>Zugang</th>
+                <td>Frei zugänglich</td>
+              </tr>
+              <tr>
+                <th>Besonderheiten</th>
+                <td>Panoramablick, Wanderwege</td>
+              </tr>
+            </table>
+
+            <!-- Inhaltsverzeichnis -->
+            <div class="wiki-toc">
+              <h3>Inhaltsverzeichnis</h3>
+              <ul>
+                <li><a href="#geschichte">Geschichte</a></li>
+                <li><a href="#architektur">Architektur</a></li>
+                <li><a href="#sehenswert">Sehenswertes</a></li>
+                <li><a href="#besuch">Besucherinformationen</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+              </ul>
+            </div>
+          </aside>
         </div>
       </div>
-      
-      
+    </main>
 
+    <!-- Platzhalter für den Footer -->
+    <div id="footer"></div>
 
    <!-- Eigene Scripts -->
    <script src="../script.js"></script>

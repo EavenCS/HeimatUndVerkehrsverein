@@ -1,47 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Verkehrsverein Südlicher Sackwald e.V. – Sehenswuerdigkeiten</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <!-- Global CSS Files -->
-    <link rel="stylesheet" href="../components/footer/footer.css">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="bildergalerie.css">
-    <link rel="stylesheet" href="../components/imageSlider/imageSlider.css">
-      
-      <!-- Navigation CSS (Loaded Last to Maintain Priority) -->
-    <link rel="stylesheet" href="../components/nav/nav.css">
-      
-      <!-- jQuery (for any required scripts) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verkehrsverein Südlicher Sackwald e.V. – Sehenswürdigkeiten</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Global CSS Files -->
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="sehenswuerdigkeiten.css" />
+    <link rel="stylesheet" href="../components/imageSlider/imageSlider.css" />
+    <link rel="stylesheet" href="../components/nav/nav.css" />
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../components/nav/nav.js"></script>
   </head>
-<body>
-  <!-- Platzhalter für die Navbar -->
-  <div id="navbar"></div>
+  <body>
+    <!-- Platzhalter für die Navbar -->
+    <div id="navbar"></div>
 
-  <!-- Hauptinhalt -->
-  <main>
-   <h1 style="text-align: center;">Sehenswuerdigkeiten</h1>
+    <!-- Hauptinhalt -->
+    <main>
+      <div class="wiki-container">
+        <div class="wiki-layout">
+          <!-- Linke Spalte: Hauptinhalt -->
+          <div class="wiki-content">
+            <h1>Sehenswürdigkeiten im südlichen Sackwald</h1>
 
-   <div class="container-one">
-    <img src="https://placehold.co/1050x350" alt="Bildbeschreibung">
-  </div>
+            <p>
+              Der südliche Sackwald und seine Umgebung bieten eine Vielzahl an historischen und natürlichen Sehenswürdigkeiten.
+              Von mittelalterlichen Burgruinen über idyllische Quellen bis hin zu beeindruckenden Naturdenkmälern –
+              hier gibt es viel zu entdecken.
+            </p>
 
-  </main>
+            <p>
+              Ob Sie sich für Geschichte, Natur oder einfach nur für schöne Ausblicke interessieren –
+              unsere Region hält für jeden etwas bereit. Klicken Sie auf eine Sehenswürdigkeit, um mehr zu erfahren.
+            </p>
 
+            <h2 id="burgen">Burgen & Burgruinen</h2>
 
-  <!-- Eigene Scripts -->
-  <script src="../script.js"></script>
-  <script src="../components/footer/footer.js"></script>
-  <script src="../components/nav/nav.js"></script>
-</body>
+            <h3><a href="winzenburg.html">Burgruine Winzenburg</a></h3>
+            <div class="wiki-gallery">
+              <div class="wiki-gallery-item">
+                <a href="winzenburg.html">
+                  <img src="http://www.suedlicher-sackwald.eu/attachments/Image/winzenburg-CD.jpg" alt="Burgruine Winzenburg" />
+                  <p>Burgruine Winzenburg</p>
+                </a>
+              </div>
+            </div>
+            <p>
+              Die Winzenburg ist eine der ältesten und bedeutendsten Burgruinen in Niedersachsen.
+              Sie thront majestätisch auf einem 320 Meter hohen Bergsporn und bietet einen atemberaubenden
+              Blick über das Leinebergland. Erste urkundliche Erwähnung im Jahr 1130.
+            </p>
+            <ul>
+              <li><strong>Typ:</strong> Höhenburg (Ruine)</li>
+              <li><strong>Erbaut:</strong> ca. 10. Jahrhundert</li>
+              <li><strong>Zugang:</strong> Frei zugänglich</li>
+              <li><strong>Wanderzeit:</strong> ca. 30 Minuten vom Ort</li>
+            </ul>
+            <p><a href="winzenburg.html">→ Mehr über die Winzenburg erfahren</a></p>
+
+            <h2 id="natur">Natur & Quellen</h2>
+
+            <h3>Die Hohe Schanze</h3>
+            <div class="wiki-gallery">
+              <div class="wiki-gallery-item">
+                <img src="http://www.suedlicher-sackwald.eu/attachments/Image/Hohe_Schanze__1.jpg?template=generic" alt="Hohe Schanze" />
+                <p>Die Hohe Schanze</p>
+              </div>
+            </div>
+            <p>
+              Die Hohe Schanze ist ein historischer Ort im südlichen Sackwald. Diese ehemalige Befestigungsanlage
+              bietet heute einen herrlichen Blick über die umliegenden Wälder und ist ein beliebtes Wanderziel.
+            </p>
+            <ul>
+              <li><strong>Typ:</strong> Historische Befestigungsanlage</li>
+              <li><strong>Zugang:</strong> Über Wanderwege erreichbar</li>
+              <li><strong>Besonderheit:</strong> Panoramablick</li>
+            </ul>
+
+            <h3>Apenteichquelle bei Winzenburg</h3>
+            <div class="wiki-gallery">
+              <div class="wiki-gallery-item">
+                <img src="http://www.suedlicher-sackwald.eu/attachments/Image/Apenteichquelle.jpg?template=generic" alt="Apenteichquelle" />
+                <p>Apenteichquelle</p>
+              </div>
+            </div>
+            <p>
+              Die Apenteichquelle ist eine idyllische Naturquelle in der Nähe von Winzenburg.
+              Das klare Quellwasser und die umgebende Natur machen diesen Ort zu einem perfekten
+              Zwischenstopp bei Wanderungen durch den Wald.
+            </p>
+            <ul>
+              <li><strong>Typ:</strong> Naturquelle</li>
+              <li><strong>Zugang:</strong> Über Wanderwege</li>
+              <li><strong>Besonderheit:</strong> Kristallklares Quellwasser</li>
+            </ul>
+
+            <h2 id="wandern">Wanderwege & Aussichtspunkte</h2>
+            <p>
+              Der südliche Sackwald ist durchzogen von gut ausgeschilderten Wanderwegen, die Sie zu allen
+              Sehenswürdigkeiten führen. Besonders empfehlenswert sind:
+            </p>
+            <ul>
+              <li><strong>Winzenburg-Rundweg:</strong> 8 km, ca. 2,5 Stunden, mittelschwer</li>
+              <li><strong>Quellen-Wanderweg:</strong> 6 km, ca. 2 Stunden, leicht</li>
+              <li><strong>Hohe Schanze Trail:</strong> 5 km, ca. 1,5 Stunden, leicht</li>
+              <li><strong>Panorama-Route:</strong> 12 km, ca. 3,5 Stunden, mittelschwer</li>
+            </ul>
+
+            <div class="wiki-quote">
+              "Der südliche Sackwald ist ein Geheimtipp für Wanderer und Naturliebhaber.
+              Die Kombination aus Geschichte, Natur und Ruhe ist einzigartig."
+              <br>— Wanderführer Niedersachsen
+            </div>
+
+            <h2 id="tipps">Tipps für Ihren Besuch</h2>
+            <ul>
+              <li>Festes Schuhwerk für Wanderungen empfohlen</li>
+              <li>Wanderkarten sind in den örtlichen Touristinformationen erhältlich</li>
+              <li>Viele Wege sind auch für Familien mit Kindern geeignet</li>
+              <li>Einkehrmöglichkeiten in den umliegenden Ortschaften</li>
+              <li>Beste Besuchszeit: Frühling bis Herbst</li>
+              <li>Im Winter können Wege vereist sein - Vorsicht!</li>
+            </ul>
+          </div>
+
+          <!-- Rechte Spalte: Infobox -->
+          <aside class="wiki-infobox">
+            <h3>Sehenswürdigkeiten</h3>
+            <img src="http://www.suedlicher-sackwald.eu/attachments/Image/winzenburg-CD.jpg" alt="Südlicher Sackwald" />
+
+            <table>
+              <tr>
+                <th>Region</th>
+                <td>Südlicher Sackwald</td>
+              </tr>
+              <tr>
+                <th>Anzahl</th>
+                <td>10+ Sehenswürdigkeiten</td>
+              </tr>
+              <tr>
+                <th>Kategorien</th>
+                <td>Burgen, Natur, Quellen</td>
+              </tr>
+              <tr>
+                <th>Wanderwege</th>
+                <td>Über 50 km markiert</td>
+              </tr>
+              <tr>
+                <th>Zugang</th>
+                <td>Meist frei zugänglich</td>
+              </tr>
+              <tr>
+                <th>Beste Zeit</th>
+                <td>April - Oktober</td>
+              </tr>
+            </table>
+
+            <!-- Inhaltsverzeichnis -->
+            <div class="wiki-toc">
+              <h3>Inhaltsverzeichnis</h3>
+              <ul>
+                <li><a href="#burgen">Burgen & Burgruinen</a></li>
+                <li><a href="#natur">Natur & Quellen</a></li>
+                <li><a href="#wandern">Wanderwege</a></li>
+                <li><a href="#tipps">Tipps</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- Platzhalter für den Footer -->
+    <div id="footer"></div>
+
+    <!-- Eigene Scripts -->
+    <script src="../script.js"></script>
+    <script src="../components/footer/footer.js"></script>
+    <script src="../components/nav/nav.js"></script>
+  </body>
 </html>
