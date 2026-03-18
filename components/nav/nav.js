@@ -1,33 +1,43 @@
 $(document).ready(function(){
-  // Load navigation HTML
-  $('#navbar').load('/components/nav/nav.html', function() {
+  // Erkenne ob wir im Root oder in einem Unterordner sind
+  const path = window.location.pathname;
+  const isInPages = path.includes('/pages/');
+  const basePath = isInPages ? '../' : './';
+
+  console.log('Pfad:', path, 'In pages:', isInPages, 'BasePath:', basePath);
+
+  // Load navigation HTML mit relativem Pfad
+  const navPath = isInPages ? '../components/nav/nav.html' : 'components/nav/nav.html';
+
+  $('#navbar').load(navPath, function() {
     console.log('Navigation geladen');
 
-    // Aktive Seite markieren basierend auf aktuellem Pfad
-    const currentPath = window.location.pathname;
-    console.log('Aktueller Pfad:', currentPath);
+    // Setze Logo-Pfad
+    const logoPath = basePath + 'components/nav/hoedeken.png';
+    $('#logo-img').attr('src', logoPath);
 
+    // Setze Logo-Link
+    const homePath = basePath + 'index.html';
+    $('#logo-link').attr('href', homePath);
+
+    // Setze Navigation Links basierend auf aktuellem Standort
     $('.nav-group a').each(function() {
-      const linkPath = $(this).attr('href');
+      const pageName = $(this).data('page');
+      let href;
 
-      // Normalisiere Pfade für Vergleich
-      let normalizedCurrent = currentPath;
-      let normalizedLink = linkPath;
-
-      // Entferne führenden Slash für besseren Vergleich
-      if (normalizedCurrent.startsWith('/')) {
-        normalizedCurrent = normalizedCurrent.substring(1);
-      }
-      if (normalizedLink.startsWith('/')) {
-        normalizedLink = normalizedLink.substring(1);
+      if (pageName === 'index.html') {
+        href = basePath + 'index.html';
+      } else {
+        href = (isInPages ? '' : 'pages/') + pageName;
       }
 
-      // Vergleiche Pfade
-      if (normalizedCurrent === normalizedLink ||
-          normalizedCurrent.endsWith(normalizedLink) ||
-          (normalizedCurrent === '' && normalizedLink === 'index.html')) {
+      $(this).attr('href', href);
+
+      // Markiere aktive Seite
+      const currentPage = path.split('/').pop() || 'index.html';
+      if (pageName === currentPage || (currentPage === '' && pageName === 'index.html')) {
         $(this).addClass('active');
-        console.log('Aktive Seite markiert:', linkPath);
+        console.log('Aktive Seite markiert:', pageName);
       }
     });
 
