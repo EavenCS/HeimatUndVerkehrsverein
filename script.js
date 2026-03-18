@@ -1,11 +1,23 @@
 $(document).ready(function(){
-    // Navbar und Footer laden (wie gehabt)
-    $("#navbar").load("../components/nav/nav.html", function(response, status, xhr) {
+    // Erkenne ob wir im Root oder in einem Unterordner sind
+    const path = window.location.pathname;
+    const isInPages = path.includes('/pages/');
+
+    // Für GitHub Pages: erkenne Repository-Name im Pfad
+    const pathParts = path.split('/').filter(p => p);
+    const repoName = pathParts.length > 0 && !pathParts[0].includes('.html') ? pathParts[0] : '';
+    const basePrefix = repoName ? '/' + repoName + '/' : '/';
+
+    const navPath = isInPages ? '../components/nav/nav.html' : (repoName ? basePrefix + 'components/nav/nav.html' : 'components/nav/nav.html');
+    const footerPath = isInPages ? '../components/footer/footer.html' : (repoName ? basePrefix + 'components/footer/footer.html' : 'components/footer/footer.html');
+
+    // Navbar und Footer laden
+    $("#navbar").load(navPath, function(response, status, xhr) {
       if(status === "error") {
         console.error("Fehler beim Laden der Navbar: " + xhr.status + " " + xhr.statusText);
       }
     });
-    $("#footer").load("../components/footer/footer.html");
+    $("#footer").load(footerPath);
   
     // Image Slider im Hero-Bereich
     var $slides = $('.slider img');

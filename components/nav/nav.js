@@ -5,14 +5,15 @@ $(document).ready(function(){
 
   // Für GitHub Pages: erkenne Repository-Name im Pfad
   const pathParts = path.split('/').filter(p => p);
-  const hasRepoInPath = pathParts.length > 0 && !pathParts[0].includes('.html');
+  const repoName = pathParts.length > 0 && !pathParts[0].includes('.html') ? pathParts[0] : '';
+  const basePrefix = repoName ? '/' + repoName + '/' : '/';
 
-  let basePath = isInPages ? '../' : './';
+  let basePath = isInPages ? '../' : (repoName ? basePrefix : './');
 
-  console.log('Pfad:', path, 'In pages:', isInPages, 'BasePath:', basePath, 'Has Repo:', hasRepoInPath);
+  console.log('Pfad:', path, 'In pages:', isInPages, 'BasePath:', basePath, 'Repo:', repoName);
 
   // Load navigation HTML mit relativem Pfad
-  const navPath = isInPages ? '../components/nav/nav.html' : 'components/nav/nav.html';
+  const navPath = isInPages ? '../components/nav/nav.html' : (repoName ? basePrefix + 'components/nav/nav.html' : 'components/nav/nav.html');
 
   $('#navbar').load(navPath, function(response, status, xhr) {
     if (status === "error") {
@@ -24,12 +25,12 @@ $(document).ready(function(){
     console.log('Navigation erfolgreich geladen');
 
     // Setze Logo-Pfad
-    const logoPath = basePath + 'components/nav/hoedeken.png';
+    const logoPath = (repoName && !isInPages) ? basePrefix + 'components/nav/hoedeken.png' : basePath + 'components/nav/hoedeken.png';
     $('#logo-img').attr('src', logoPath);
     console.log('Logo Pfad gesetzt:', logoPath);
 
     // Setze Logo-Link
-    const homePath = basePath + 'index.html';
+    const homePath = (repoName && !isInPages) ? basePrefix + 'index.html' : basePath + 'index.html';
     $('#logo-link').attr('href', homePath);
 
     // Setze Navigation Links basierend auf aktuellem Standort
@@ -38,9 +39,13 @@ $(document).ready(function(){
       let href;
 
       if (pageName === 'index.html') {
-        href = basePath + 'index.html';
+        href = (repoName && !isInPages) ? basePrefix + 'index.html' : basePath + 'index.html';
       } else {
-        href = (isInPages ? '' : 'pages/') + pageName;
+        if (repoName && !isInPages) {
+          href = basePrefix + 'pages/' + pageName;
+        } else {
+          href = (isInPages ? '' : 'pages/') + pageName;
+        }
       }
 
       $(this).attr('href', href);
